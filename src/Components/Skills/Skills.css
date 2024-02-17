@@ -1,0 +1,38 @@
+.skill {
+    padding: 150px 0 100px 0;
+    margin-left: 50px;
+    margin-right: 50px;
+    position: relative;
+    text-align: center;
+  }
+
+
+.skills-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 320px;
+    height: 250px;
+    text-align: center;
+  }
+
+  .product--image {
+    width: 100%;
+    height: 12em;
+    object-fit: cover;
+  }
+
+  .skill h2 {
+    font-size: 45px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    padding: 0px 0 50px 0;
+    color: black;
+  }
+  .skill h5{
+    color: black;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  
+  

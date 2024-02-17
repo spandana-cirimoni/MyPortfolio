@@ -1,0 +1,63 @@
+.project {
+    padding: 150px 0 50px 0;
+    position: relative;
+}
+
+.project h2 {
+      font-size: 45px;
+      font-weight: 700;
+    text-align: center;
+    padding: 0px 0 50px 0;
+}
+
+.carddiv{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around;
+}
+  
+.CardImage {
+    height: 300px;
+    object-fit: cover;
+}
+
+.Heading{
+    text-align: center;
+}
+
+.title{
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.text{
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 15px;
+    justify-content: space-around;
+}
+
+.button {
+    align-content: end;
+    font-weight: 500;
+    color: black;
+    padding: 20px 20px;
+    font-size: 16px;
+    margin-left: 450px;
+    position: relative;
+    background-color: transparent;
+    transition: 0.3s ease-in-out;
+}
+
+.button svg {
+    font-size: 22px;
+    margin-left: 10px;
+    transition: 0.3s ease-in-out;
+    line-height: 1;
+}
+
+.button:hover svg {
+    margin-left: 25px;
+}
