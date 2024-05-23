@@ -1,34 +1,109 @@
-.about {
-    margin-left: 70px;
-    margin-right: 70px;
-    padding: 50px 0 100px 0;
+.about_container {
+    display: grid;
+    grid-template-columns: 0.5fr 3.5fr;
+    align-items: start;
+    column-gap: 1rem;
+}
+.about__img-container {
+    margin-top: 18px;
+    position: relative;
+    width: 25rem;
+    height: 25rem;
+    display: flex;
+    align-items: start;
 }
 
-.header{
-    font-size: 32px;
-    font-weight: 600;
-    letter-spacing: 0.8px;
+.about__img-background {
+    width: 85%;
+    height: 100%;
+    border-radius: 0.5rem;
+    position: absolute;
+    border: 4px solid var(--color-1);
+    transition: transform 0.3s ease-in-out;
 }
-
-.card {
-    background: #fff;
-    border-radius: 0.6em;
-    margin: 1em;
-    overflow: hidden;
-    cursor: pointer;
-    box-shadow: 0 13px 27px -5px hsla(240, 30.1%, 28%, 0.25), 0 8px 16px -8px hsla(0, 0%, 0%, 0.3), 0 -6px 16px -6px hsla(0, 0%, 0%, 0.03);
-    transition: all ease 200ms;
-  }
   
-  .card:hover {
-    transform: scale(1.03);
-    box-shadow: 0 13px 40px -5px hsla(240, 30.1%, 28%, 0.12), 0 8px 32px -8px hsla(0, 0%, 0%, 0.14), 0 -6px 32px -6px hsla(0, 0%, 0%, 0.02);
-  }
+.about__img {
+    width: 85%;
+    height: 100%;
+    border-radius: 0.5rem;
+    position: absolute;
+    transition: transform 0.3s ease-in-out;
+}
 
-.para{
-    font-size: 18px;
-    font-weight: 400;
-    letter-spacing: 0.8px;
-    text-align: justify;
-    text-justify: inter-word;
+.about__img:last-child {
+    left: 15px;
+    bottom: 15px;
+}
+
+.about__img-container:hover .about__img-background {
+    transform: translate(-10px,10px); /* Move left and down on hover */
+}
+  
+.about__img-container:hover .about__img {
+    transform: translate(10px,-10px); /* Move up on hover */
+}
+
+.about__data {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: var(--mb-2);
+    justify-content: space-around;
+    text-align: justify; 
+}
+
+.about__description{
+    font-weight: var(--font-normal);
+    color: var(--color-3);
+}
+
+b{
+    color: var(--color-8);
+    font-weight: var(--font-semi-bold);
+}
+
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+    .about__container{
+        grid-template-columns: 1fr;
+        row-gap: 2.5rem;
+    }
+    .about__img {
+        width: 220px; 
+    }
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+    .about__container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about__img {
+        margin-top: 1rem; 
+    }
+    .about__description{
+        padding: 0 5rem;
+        margin-bottom: 2rem;
+    }
+}
+
+/* For small devices */
+@media screen and (max-width: 576px) {
+    .about__description {
+        padding: 0; 
+    }
+}
+
+/* For extra small devices */
+@media screen and (max-width: 350px) {
+    .about__container {
+        grid-template-columns: 1fr;
+    }
+
+    .about__img {
+        margin-top: 1rem; 
+    }
 }
